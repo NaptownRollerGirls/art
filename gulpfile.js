@@ -7,6 +7,7 @@ var rename      = require("gulp-rename");
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var rsync       = require('gulp-rsync');
+var secrets     = require('./secrets.json');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -86,14 +87,14 @@ gulp.task('default', ['browser-sync', 'watch']);
  * Once you've tested your project, you can deploy the files using gulp deploy:production
  * Note: setup ssh keys to avoid having to enter the ssh pass each time. See the README for info.
  */
-gulp.task('deploy:staging', ['jekyll-build'], function() {
+gulp.task('deploy:production', ['jekyll-build'], function() {
     return gulp.src('**/*', {cwd: '_site'})
     .pipe(rsync({
         root: '_site',
-        port: 25000,
-        username: 'xxx',
-        hostname: 'xxx.com',
-        destination: '/var/www/xxx/',
+        port: 22,
+        username: secrets.servers.prod.username,
+        hostname: secrets.servers.prod.hostname,
+        destination: secrets.servers.prod.destination,
         incremental: true,
         recursive: true,
         compress: true,
