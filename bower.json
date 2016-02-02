@@ -1,0 +1,26 @@
+{
+  "name": "nrg-creative",
+  "version": "0.0.1",
+  "description": "like the title says",
+  "authors": [
+    "BaM"
+  ],
+  "main": "index.html",
+  "keywords": [
+    "jekyll",
+    "purecss",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0"
+  }
+}
