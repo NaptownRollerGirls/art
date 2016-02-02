@@ -1,0 +1,6 @@
+name: NRG creative
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json", "js/main.js"]
+permalink: /posts/:title/
+excerpt_separator: <!--more-->
+keep_files: ["js/main.min.js", "css/main.css"]
