@@ -79,6 +79,18 @@ a {
   margin-bottom: 40px;
 }
 
+.notopp {
+  padding-top: 0 !important;
+}
+
+.nobotp {
+  padding-bottom: 0 !important;
+}
+
+.paddingtop10 {
+  padding-top: 10px !important;
+}
+
 .p15 {
   padding: 15px;
 }
@@ -133,6 +145,21 @@ a {
     display: block;
     line-height: 30px;
     padding: 8px 12px;
+}
+
+.collapsible {
+  box-shadow: none;
+  border: 0;
+  border-top: 1px solid #ddd;
+
+  .collapsible-header {
+    background-color: transparent;
+  }
+
+  .collapsible-body {
+    background-color: #fff;
+    overflow: auto;
+  }
 }
 
 .section_header {
