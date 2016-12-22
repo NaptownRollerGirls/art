@@ -1,4 +1,4 @@
-name: NRG creative
+name: NRD creative
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "secrets.json", "package.json", "js/main.js"]
 permalink: /posts/:title/

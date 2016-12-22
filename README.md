@@ -1,2 +1,2 @@
 # art
-This is the repo for the NRG creative site + requests area
+This is the repo for the NRD creative site + requests area

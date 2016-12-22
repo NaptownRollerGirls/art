@@ -23,6 +23,21 @@ body {
   }
 }
 
+.note {
+  display: block;
+  padding: 25px;
+  margin-top: 60px;
+  font-size: 1.125rem;
+  border: 1px solid $arrows;
+  color: $transparent-light;
+  background-color: #fff9d4;
+
+  i, .inner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 /* link styles */
 
 /*
